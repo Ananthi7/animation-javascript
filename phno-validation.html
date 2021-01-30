@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>phone number validation in javascript</title>
+</head>
+<body>
+    <form onsubmit="submitForm()">
+        <label for="phoneNumber">PHONE NUMBER:</label>
+        <input type="text" name="phoneNumber" id="phoneNumber">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+    function submitForm() {
+        var value = document.getElementById("phoneNumber").value;
+          if (value == ""||isNaN(value) == true||value.length > 10 || value.length < 10||value.charAt(0) != 9) {
+                alert("Invalid input");
+            }
+            else{
+               document.write("your phone Number successfully submitted")
+            }
+        }
+        </script>
+</body>
+</html>
