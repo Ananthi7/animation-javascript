@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>looping statment in javascript</title>
+</head>
+
+<body>
+    <script>
+        //print number 1 to 10 using javascript
+        var result = " ";
+        for (i = 0; i < 10; i++) {
+            result += i;
+        }
+        //while loop
+        var i = 0;
+        while (i < 5) {
+            result += i;
+            i++;
+            
+        }
+        //do while loop
+        var i = 0;
+        do {
+            result += i;
+            i++;
+        } while (i < 5)
+        var person = { fname: "John", lname: "Doe", age: 25 };
+        var data;
+        for (data in person) {
+            result += person[data];
+        }
+        var cars = ["BMW", "Volvo", "Mini"];
+        var carName;
+        for(carName of cars){
+            result+=carName;
+        }
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
