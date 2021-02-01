@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>email validation</title>
+</head>
+
+<body>
+    <form onsubmit="emailValidation()">
+        <label for="email">E-MAIL:</label>
+        <input type="text" name="email" id="email">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        emailValidation = () => { //Arrow function
+            var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var getmail = document.getElementById("email").value;
+            if (getmail.match(pattern)) {
+                alert("your email is valid");
+            }
+            else if (getmail == "") {
+                alert("please type your emailid");
+            }
+            else {
+                alert("invalid email id");
+            }
+        }
+    </script>
+</body>
+
+</html>
