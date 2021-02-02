@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritence in javascript</title>
+</head>
+<body>
+    <script>
+        class studentDetail{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            getdata(){
+                return this.name;
+            }
+        
+        }
+        class  studentdata extends studentDetail{
+            constructor(name,phonenumber){
+                super(name);
+                this.phonenumber=phonenumber;
+               
+            }
+            student(){
+                return "student name is"+this.getdata()+"student phonenumber"+this.phonenumber;
+            }
+        }
+        var data=new studentdata("Ananthi",48457676);
+        console.log(data.student());
+    </script>
+</body>
+</html>
