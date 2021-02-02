@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>encapsulation in javascript</title>
+</head>
+
+<body>
+    <script>
+        class name {
+            constructor() {
+                var name, age;
+            }
+            getname() {
+                return this.name;
+            }
+            setname(name) {
+                this.name = name;
+            }
+
+        }
+        var obj = new name;
+        obj.setname("ananthi");
+        console.log("student name is"+" "+obj.getname());
+    </script>
+</body>
+
+</html>
