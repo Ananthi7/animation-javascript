@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>call back function</title>
+</head>
+<body>
+    <script>
+        function addition(num1,num2,add){
+           var result=num1+num2;
+           add(result);
+        }
+        function callback(result){
+            console.log(result);
+        }
+        addition(10,20,callback);
+    </script>
+</body>
+</html>
