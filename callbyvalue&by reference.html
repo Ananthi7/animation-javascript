@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>call by value and call by reference</title>
+</head>
+<body>
+   <script>
+       //call by value
+       var a=10;
+       var b;
+       b=a;
+       a=2;
+       console.log(a);
+       console.log(b); 
+       //call by reference
+       var c={
+           greet:"hi",
+        }
+        var d;
+        d=c;
+        var c={
+            greet:"hello",
+        }
+        console.log(c.greet);
+        console.log(d.greet);
+   </script> 
+</body>
+</html>
