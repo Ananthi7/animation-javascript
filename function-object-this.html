@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>function,object,this</title>
+</head>
+<body>
+   <script>
+       var obj={
+           name:"Ananthi",
+           getname:function(){
+                return this;    //It return the object
+           }
+       }
+       function myfunction(){
+           console.log(this);   //it gives window object
+       }
+       myfunction();
+       console.log(obj.getname())
+
+   </script> 
+</body>
+</html>
